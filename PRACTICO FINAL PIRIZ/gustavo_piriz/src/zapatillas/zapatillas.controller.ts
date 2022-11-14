@@ -1,5 +1,5 @@
-import { Controller } from '@nestjs/common';
-import { ZapatillasService } from '/zapatillas.service';
+import { Controller, Get, Post } from '@nestjs/common';
+import { ZapatillasService } from './zapatillas.service';
 
 @Controller('zapatillas')
 export class ZapatillasController {
@@ -8,11 +8,11 @@ export class ZapatillasController {
 @Get()    
 getZapatillas():string {
     return this.zapatillasService.getZapatillas();
-
+}
 
 @Post()  
-postZapatillas():String {
-    return this.zapatillasService.postZapatillas();}  
+postZapatillas():string {
+    return this.zapatillasService.postZapatillas();  
 }
 
 

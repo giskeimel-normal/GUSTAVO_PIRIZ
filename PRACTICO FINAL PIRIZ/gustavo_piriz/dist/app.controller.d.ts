@@ -1,6 +1,6 @@
-import { ZapatillasService } from './zapatillas.service';
-export declare class ZapatillasController {
-    private readonly zapatillasService;
-    constructor(zapatillasService: ZapatillasService);
+import { AppService } from './app.service';
+export declare class AppController {
+    private readonly appService;
+    constructor(appService: AppService);
     getZapatillas(): string;
 }

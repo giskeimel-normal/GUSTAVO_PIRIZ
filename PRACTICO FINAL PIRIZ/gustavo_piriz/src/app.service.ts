@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class ZapatillasService {
+export class AppService {
 
   getZapatillas(): string {
     return 'goma, tela, cuero.';

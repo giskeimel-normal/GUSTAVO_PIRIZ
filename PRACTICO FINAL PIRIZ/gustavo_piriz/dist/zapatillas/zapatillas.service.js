@@ -9,6 +9,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ZapatillasService = void 0;
 const common_1 = require("@nestjs/common");
 let ZapatillasService = class ZapatillasService {
+    getZapatillas() {
+        return 'goma, tela, cuero.';
+    }
+    postZapatillas() {
+        return 'goma: $400, tela: $800, cuero: $1200.';
+    }
 };
 ZapatillasService = __decorate([
     (0, common_1.Injectable)()
